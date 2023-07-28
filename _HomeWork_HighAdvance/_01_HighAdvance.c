@@ -22,15 +22,7 @@ here:
 	{
 		for (int i = 0; i < 4; i++)
 		{
-			if (i == 0)
-			{
-				printf("   ");
-			}
-			else if (i == 1)
-			{
-				printf("  ");
-			}
-			else if (i == 2)
+			for (int space = 3; space > i; space--)
 			{
 				printf(" ");
 			}
@@ -44,17 +36,9 @@ here:
 
 		for (int i = 0; i < 3; i++)
 		{
-			if (i == 0)
+			for (int space = 0; space <= i; space++)
 			{
 				printf(" ");
-			}
-			else if (i == 1)
-			{
-				printf("  ");
-			}
-			else if (i == 2)
-			{
-				printf("   ");
 			}
 			printf("\*");
 			for (int p = 2; p > i; p--)
