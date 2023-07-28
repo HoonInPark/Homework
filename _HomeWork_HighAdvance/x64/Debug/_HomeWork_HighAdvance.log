@@ -1,6 +1,5 @@
 ﻿  _01_HighAdvance.c
-D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(29,11): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
-D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(32,12): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
-D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(43,11): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
-D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(46,12): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(33,11): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(38,13): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(45,13): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
   _HomeWork_HighAdvance.vcxproj -> D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\x64\Debug\_HomeWork_HighAdvance.exe

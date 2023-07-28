@@ -9,7 +9,7 @@
  *****
   ***
    *
-이렇게 출력하세요.*/
+이렇게 출력하세요.  1 3 5 7 5 3 1 */ 
 
 void main() {
 	int input; 
@@ -18,32 +18,32 @@ here:
 	printf("홀수7을 입력하면 문자가 출력됩니다. >> : ");
 	scanf_s("%d", &input);
 
-	if (input == 7)
+	if (input % 2 == 1)
 	{
-		for (int i = 0; i < 4; i++)
+		for (int i = 0; i < input; i++)
 		{
-			for (int space = 3; space > i; space--)
+			for (int space = input / 2; space > i; space--) // 3 2 1 , 3 2 , 3
+			{
+				printf(" ");
+			}
+			for (int space2 = input - (input / 2); space2 <= i; space2++) // 0 , 0 1 , 0 1 2
 			{
 				printf(" ");
 			}
 			printf("\*");
-			for (int p = 0; p < i; p++)
+			if (i <= input / 2)
 			{
-				printf("\**");
+				for (int ast1 = 0; ast1 < input - (input - i); ast1++)
+				{
+					printf("\**");
+				}
 			}
-			printf("\n");
-		}
-
-		for (int i = 0; i < 3; i++)
-		{
-			for (int space = 0; space <= i; space++)
+			else if (i > input / 2)
 			{
-				printf(" ");
-			}
-			printf("\*");
-			for (int p = 2; p > i; p--)
-			{
-				printf("\**");
+				for (int ast2 = input - 1; ast2 > i; ast2--)
+				{
+					printf("\**");
+				}
 			}
 			printf("\n");
 		}
