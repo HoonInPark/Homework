@@ -1,0 +1,12 @@
+﻿  Advance5.c
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(11,18): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(11,18): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(13,20): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(13,20): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(15,21): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(15,21): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(17,22): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(17,22): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(19,23): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+C:\Users\USER-PC\source\repos\_002_Homework\Advance\Advance5.c(19,23): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  Advance.vcxproj -> C:\Users\USER-PC\source\repos\_002_Homework\x64\Debug\Advance.exe
