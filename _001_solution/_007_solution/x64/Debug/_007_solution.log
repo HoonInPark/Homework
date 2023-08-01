@@ -1,2 +1,4 @@
 ﻿  Advanced_5.c
+D:\lec_My\_01_CLanguage_Solution\_001_solution\_007_solution\Advanced_5.c(32,29): warning C4098: 'Callfactorial': 'void' 함수에서 값을 반환하고 있습니다.
+D:\lec_My\_01_CLanguage_Solution\_001_solution\_007_solution\Advanced_5.c(33): warning C4717: 'Callfactorial': 모든 제어 경로에서 재귀적입니다. 함수로 인해 런타임 스택 오버플로가 발생합니다.
   _007_solution.vcxproj -> D:\lec_My\_01_CLanguage_Solution\_001_solution\x64\Debug\_007_solution.exe
