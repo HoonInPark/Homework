@@ -1,5 +1,7 @@
 ﻿  _01_HighAdvance.c
-D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(33,11): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
-D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(38,13): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
-D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\_HomeWork_HighAdvance\_01_HighAdvance.c(45,13): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
-  _HomeWork_HighAdvance.vcxproj -> D:\Visual Studio 2022 Files\_001_Test_Repository-MinJaePark\x64\Debug\_HomeWork_HighAdvance.exe
+D:\Visual Studio 2022 Files\_001_lec_ParkMinJae\_HomeWork_HighAdvance\_01_HighAdvance.c(37,11): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+D:\Visual Studio 2022 Files\_001_lec_ParkMinJae\_HomeWork_HighAdvance\_01_HighAdvance.c(40,12): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+D:\Visual Studio 2022 Files\_001_lec_ParkMinJae\_HomeWork_HighAdvance\_01_HighAdvance.c(59,11): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+D:\Visual Studio 2022 Files\_001_lec_ParkMinJae\_HomeWork_HighAdvance\_01_HighAdvance.c(62,12): warning C4129: '*': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+  LINK : D:\Visual Studio 2022 Files\_001_lec_ParkMinJae\x64\Debug\_HomeWork_HighAdvance.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  _HomeWork_HighAdvance.vcxproj -> D:\Visual Studio 2022 Files\_001_lec_ParkMinJae\x64\Debug\_HomeWork_HighAdvance.exe
