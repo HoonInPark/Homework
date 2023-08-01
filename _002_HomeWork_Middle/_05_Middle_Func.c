@@ -40,11 +40,13 @@ int i = 1;
 int sum = 1;
 
 void Callfactorial(int input) {
-	sum = sum * (i++ * input / input--);
+	if (input > 0)
+	{
+		sum = sum * (i++ * input / input--);
 
-	printf("%d\n", sum);
-	return Callfactorial(input);
-	
+		printf("%d\n", sum);
+		return Callfactorial(input);
+	}
 }
 
 void main() {

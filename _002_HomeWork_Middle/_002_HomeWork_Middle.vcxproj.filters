@@ -30,5 +30,11 @@
     <ClCompile Include="_05_Middle_Func.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="_06_Middle_Func.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_07_Middle_Func.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
