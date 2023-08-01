@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{06f3f08b-56bb-432f-b29b-eedb27feceb0}</ProjectGuid>
-    <RootNamespace>My004solution</RootNamespace>
+    <ProjectGuid>{9b6b5d24-91f4-4cd5-9f13-b40c58cd235b}</ProjectGuid>
+    <RootNamespace>My007solution</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,9 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="HighAdvance.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="Advanced_5.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
