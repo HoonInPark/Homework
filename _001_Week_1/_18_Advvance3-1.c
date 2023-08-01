@@ -15,13 +15,13 @@ void main() {
 			num_temp = num_temp / 10;
 		}
 		if (num_temp != 0 || num % 3 == 0)
-			pruntf("Â¦");
-		else
-			printf("%d", num);
+			printf("Â¦");
+			else
+				printf("%d", num);
 
 		printf("\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?");
 		scanf_s("%d", &isRun_num);
-		if (isRun_num == 0)
+		if (isRun_num == 0) 
 			isRun = 0;
 	}
 }
