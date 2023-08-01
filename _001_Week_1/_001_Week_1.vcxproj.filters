@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_01_Basic1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_02_Basic2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_03_Basic3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_04_Basic4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_05_Basic5.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_06_Basic6.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_07_Basic7.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_08_Advance1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_09_Advance2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_10_Advance2-1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_11_Advance3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_12_Advance4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_13_Advance5.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_14_Advance6.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_15_Advvance1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_16_Advvance2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_17_Advvance3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_18_Advvance3-1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_19_Advvance4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
