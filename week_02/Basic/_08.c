@@ -13,4 +13,6 @@ int main()
 
 	} while (num != 0);
 	printf("[총합 : %d]\n", total);
+
+	return 0;
 }
