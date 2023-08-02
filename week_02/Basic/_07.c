@@ -12,4 +12,6 @@ int main()
 		printf("[%d * %d = %d]\n", num, i, num * i);
 		i++;
 	} while (i < 10);
+
+	return 0;
 }
