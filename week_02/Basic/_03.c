@@ -11,4 +11,6 @@ int main()
 	} while (i <= 10);
 
 	printf("%d\n", total);
+
+	return 0;
 }
