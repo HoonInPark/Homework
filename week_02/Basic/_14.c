@@ -14,4 +14,6 @@ int main()
 			printf("[3 * %d = %d]\n", i, 3 * i);
 		}
 	}
+
+	return 0;
 }
