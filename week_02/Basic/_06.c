@@ -15,4 +15,6 @@ int main()
 			i++;
 		} while (i <= num);
 	}
+
+	return 0;
 }
