@@ -14,4 +14,6 @@ int main()
 			printf("[감사합니다.]\n");
 		}
 	}
+
+	return 0;
 }
