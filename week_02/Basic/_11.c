@@ -8,4 +8,6 @@ int main()
 		total += i;
 	}
 	printf("[total : %d]\n", total);
+
+	return 0;
 }
