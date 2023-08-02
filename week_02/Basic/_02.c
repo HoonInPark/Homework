@@ -9,4 +9,6 @@ int main()
 		printf("%d\n", i);
 		i++;
 	} while (i <= 20);
+
+	return 0;
 }
