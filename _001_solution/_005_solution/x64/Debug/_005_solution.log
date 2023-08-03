@@ -1,0 +1,6 @@
+﻿  Basic_3.c
+D:\lec_My\_01_CLanguage_Solution\_001_solution\_005_solution\Basic_3.c(9,9): warning C4473: 'printf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+D:\lec_My\_01_CLanguage_Solution\_001_solution\_005_solution\Basic_3.c(9,9): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 3개 필요하지만 0개가 제공되었습니다.
+D:\lec_My\_01_CLanguage_Solution\_001_solution\_005_solution\Basic_3.c(9,9): message : 누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
+D:\lec_My\_01_CLanguage_Solution\_001_solution\_005_solution\Basic_3.c(4,6): warning C4101: 'int_temp' :참조되지 않은 지역 변수입니다.
+  _005_solution.vcxproj -> D:\lec_My\_01_CLanguage_Solution\_001_solution\x64\Debug\_005_solution.exe
