@@ -24,5 +24,17 @@
     <ClCompile Include="_03_Advance.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="_04_Advance.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_05_Advance.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_06_Advance.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_07_Advance.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
