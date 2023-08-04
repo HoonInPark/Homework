@@ -1,0 +1,5 @@
+﻿  Advanced_4.c
+E:\Study-C\_001_lec\_112_HomeWork\Advanced_4.c(5,2): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+E:\Study-C\_001_lec\_112_HomeWork\Advanced_4.c(30,2): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+E:\Study-C\_001_lec\_112_HomeWork\Advanced_4.c(22): warning C4716: 'calcNum': 값을 반환해야 합니다.
+  _112_HomeWork.vcxproj -> E:\Study-C\_001_lec\x64\Debug\HomeWork_02.exe
