@@ -1,25 +1,22 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
 void doWhilePrint(int int_lower, int int_interval, int int_upper) {
-	int int_temp = int_lower;
-	
 	do
 	{
+		if (!int_lower % 2)
+			printf("%d\n", int_lower);
 		int_lower += int_interval;
-		int_temp += int_lower;
-	} while (int_lower < int_upper);
-
-	printf("ÃÑÇÕÀº %dÀÔ´Ï´Ù!!!", int_temp);
+	} while (int_lower < int_upper + 1);
 }
 
 void main() {
-	printf("¾î´À ¼ýÀÚºÎÅÍ ½ÃÀÛÇÏ½Ã°Ú½À´Ï±î? >> ");
+	printf("ì–´ëŠ ìˆ«ìžë¶€í„° ì‹œìž‘í•˜ì‹œê² ìŠµë‹ˆê¹Œ? >> ");
 	int num_lower;
 	scanf_s("%d", &num_lower);
-	printf("°£°ÝÀº ¾ó¸¶·Î ÇÏ½Ã°Ú½À´Ï±î? >> ");
+	printf("ê°„ê²©ì€ ì–¼ë§ˆë¡œ í•˜ì‹œê² ìŠµë‹ˆê¹Œ? >> ");
 	int num_interval;
 	scanf_s("%d", &num_interval);
-	printf("¾îµð±îÁö ÇÏ½Ã°Ú½À´Ï±î? >> ");
+	printf("ì–´ë””ê¹Œì§€ í•˜ì‹œê² ìŠµë‹ˆê¹Œ? >> ");
 	int num_upper;
 	scanf_s("%d", &num_upper);
 
