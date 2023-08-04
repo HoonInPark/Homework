@@ -23,8 +23,8 @@ void showResult(int _result, int _userInput[NUM_COMPARE]) {
 	if (callFuncCount >= NUM_COMPARE) {
 		printf("\n");
 		for (int i = 0; i < NUM_COMPARE; i++)
-			_userInput[i];
-	}
+			printf("%d ", _userInput[i]);
+	} 
 }
 
 void countBall(int _userInput[NUM_COMPARE]) {
