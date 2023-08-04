@@ -66,5 +66,23 @@
     <ClCompile Include="_17_Basic17.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="_18_Basic18.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_19_Basic19.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_20_Basic20.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_21_Middle1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_22_Middle2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_23_Middle3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
