@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define NUM_COMPARE 3
 
@@ -29,6 +30,7 @@ void showResult(int _result, int _userInput[NUM_COMPARE]) {
 void countBall(int _userInput[NUM_COMPARE]) {
 	int strike = 0;
 	int ball = 0;
+	srand(time(NULL));
 
 	// 사용자 입력과 컴퓨터의 난수를 (생성과 동시에) 비교 1. 동일한 수가 있냐? 2. 그 수와 인덱스가 일치하냐?
 	for (int i = 0; i < NUM_COMPARE; i++)
