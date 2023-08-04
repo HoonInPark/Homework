@@ -4,7 +4,7 @@
 #define NUM_COMPARE 3
 
 int makeRandNum() {
-	return rand() % 10; // 나머지가 1~9 무작위. 
+	return rand() % 10; // 나머지가 1~9 무작위.	
 }
 
 int getUserInput() {
@@ -12,6 +12,18 @@ int getUserInput() {
 	printf("숫자를 입력하세요 >> ");
 	scanf_s("%d", &num);
 	return num;
+}
+
+void showResult(int _result, int _userInput[NUM_COMPARE]) {
+	static int callFuncCount = 0;
+	printf("%d ", _result);
+	callFuncCount++;
+
+	if (callFuncCount >= NUM_COMPARE) {
+		printf("\n");
+		for (int i = 0; i < NUM_COMPARE; i++)
+			_userInput[i];
+	}
 }
 
 void countBall(int _userInput[NUM_COMPARE]) {
@@ -24,10 +36,19 @@ void countBall(int _userInput[NUM_COMPARE]) {
 		int randNum_temp = makeRandNum();
 
 		for (int j = 0; j < NUM_COMPARE; j++) {
-			if (randNum_temp == _userInput[j] && i == j) {	strike++; }
-			else if (randNum_temp == _userInput[j] && i != j) {	ball++;	}
+			if (randNum_temp == _userInput[j] && i == j) 
+				strike++; 
+			else if (randNum_temp == _userInput[j] && i != j) 
+				ball++;	
 		}
+
+		showResult(randNum_temp, _userInput);
 	}
+
+	if (strike < 3) 
+		printf("%d strike %d ball", strike, ball); 
+	else 
+		printf("%d strike out!!", strike); 
 }
 
 void main() {
@@ -36,5 +57,5 @@ void main() {
 	for (int i = 0; i < NUM_COMPARE; i++)
 		userInput[i] = getUserInput();
 
-
+	countBall(userInput);
 }
