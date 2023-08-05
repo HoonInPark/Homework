@@ -1,3 +1,1 @@
-﻿  Advanced_6.c
-D:\lec_My\_01_CLanguage_Solution\_001_solution\_007_solution\Advanced_6.c(33,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  _007_solution.vcxproj -> D:\lec_My\_01_CLanguage_Solution\_001_solution\x64\Debug\_007_solution.exe
+﻿  _007_solution.vcxproj -> D:\lec_My\_01_CLanguage_Solution\_001_solution\x64\Debug\_007_solution.exe
