@@ -1,16 +1,16 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 #define NUM_COMPARE 3
 
 int makeRandNum() {
-	return rand() % 10; // ³ª¸ÓÁö°¡ 0~9 ¹«ÀÛÀ§.
+	return rand() % 10; // ë‚˜ë¨¸ì§€ê°€ 0~9 ë¬´ì‘ìœ„.
 }
 
 int getUserInput() {
 	int num;
-	printf("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+	printf("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 	scanf_s("%d", &num);
 	return num;
 }
@@ -36,13 +36,13 @@ void countBall(int _userInput[NUM_COMPARE]) {
 	srand(time(NULL));
 	int randNum_Arr[NUM_COMPARE];
 
-	// Áßº¹ÀÌ ¾ø´Â ¹«ÀÛÀ§ ¼ö¸¦ »ı¼º
+	// ì¤‘ë³µì´ ì—†ëŠ” ë¬´ì‘ìœ„ ìˆ˜ë¥¼ ìƒì„±
 	for (int i = 0; i < NUM_COMPARE; i++) {
 		int num;
 		int isDuplicate;
 		do {
 			num = makeRandNum();
-			isDuplicate = 0; // ±âº»°ªÀ¸·Î ÃÊ±âÈ­
+			isDuplicate = 0; // ê¸°ë³¸ê°’ìœ¼ë¡œ ì´ˆê¸°í™”
 			for (int j = 0; j < i; j++) {
 				if (randNum_Arr[j] == num) {
 					isDuplicate = 1;
@@ -75,7 +75,7 @@ void countBall(int _userInput[NUM_COMPARE]) {
 void main() {
 	int userInput[NUM_COMPARE];
 	int num_continue;
-	printf("¼ıÀÚ ¾ß±¸ °ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù.\n");
+	printf("ìˆ«ì ì•¼êµ¬ ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤.\n");
 
 	do {
 		for (int i = 0; i < NUM_COMPARE; i++)
@@ -83,9 +83,9 @@ void main() {
 
 		countBall(userInput);
 
-		printf("°ÔÀÓÀ» ´Ù½Ã ½ÃÀÛÇÏ½Ã°Ú½À´Ï±î? (1: Àç½ÃÀÛ, 0: Á¾·á) >> ");
+		printf("ê²Œì„ì„ ë‹¤ì‹œ ì‹œì‘í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (1: ì¬ì‹œì‘, 0: ì¢…ë£Œ) >> ");
 		scanf_s("%d", &num_continue);
 	} while (num_continue);
 
-	printf("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù.\n");
+	printf("ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.\n");
 }

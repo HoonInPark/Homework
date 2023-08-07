@@ -21,5 +21,8 @@
     <ClCompile Include="Advanced_6.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Advanced_8.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
