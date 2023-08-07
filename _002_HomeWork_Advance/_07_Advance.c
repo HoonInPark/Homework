@@ -4,12 +4,11 @@
     숫자를 찾는 프로그램을 작성합니다. 그런 다음 프로그램은  
     이 두 숫자의 합을 반환해야 합니다.*/
 
-int arr[4];
-int first = 0;
-int second = 0;
-
+int arr[5];
+int max = 0;
+int arr2[2];
 void InputArray() {
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 5; i++)
     {
         printf("배열에 넣을 정수를 입력하세요. >> ");
         scanf_s("%d", &arr[i]);
@@ -17,25 +16,26 @@ void InputArray() {
 }
 
 void ScanSize() {
-    first = second = arr[0];
-    for (int i = 0; i < 4; i++)
+    int result = 0;
+    for (int i = 0; i < 5; i++)
     {
-        if (first < arr[i])
+        for (int j = 4; j > i; j--)
         {
-            first = arr[i];
+            result = arr[i] + arr[j];
+            if (max < result)
+            {
+                arr2[0] = arr[i];
+                arr2[1] = arr[j];
+                max = result;
+            }
         }
-        if (second < arr[i] && arr[i] < first)
-        {
-            second = arr[i];
-        }
-        printf("%d\n", arr[i]);
     }
 }
 
 void main() {
     InputArray();
-    ScanSize(first, second);
-
-    printf("가장 큰 수는 %d\n", first);
-    printf("두번째로 큰 수는 %d\n", second);
+    ScanSize();
+    
+    printf("가장 큰 합을 갖는 두수는 %d %d\n", arr2[0], arr2[1]);
+    printf("가장 큰 합을 갖는 두수의 합은 %d\n", max);
 }

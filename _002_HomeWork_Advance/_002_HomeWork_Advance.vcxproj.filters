@@ -36,5 +36,11 @@
     <ClCompile Include="_07_Advance.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="_08_Advance.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_09_Advance.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
