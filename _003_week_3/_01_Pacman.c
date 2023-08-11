@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<windows.h>
 #include <conio.h>
 
@@ -8,22 +8,13 @@
 #define DOWN 80 //아래 방향키
 #define ARROW 224
 
-void GotoXY(int x, int y) {
+void GotoXY(int x, int y)
+{
 	COORD Pos;
 	Pos.X = x;
 	Pos.Y = y;
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Pos);
 }
-void CursorView(char show)
-{
-	CONSOLE_CURSOR_INFO ConsoleCursor;
-	ConsoleCursor.bVisible = show;
-	ConsoleCursor.dwSize = 1;
-	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &ConsoleCursor);
-}
-
-int x = 30;
-int y = 20;
 
 int map[31][31] =
 {
@@ -57,9 +48,12 @@ int map[31][31] =
 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
 };
 
+int x = 0, y = 0;
+
 void main() {
 	system("mode con: cols=62 lines=48");
 	char ch;
+
 
 	for (int i = 0; i < sizeof(map) / sizeof(map[31]); i++)
 	{
@@ -77,39 +71,58 @@ void main() {
 			}
 		}
 	}
-
-	CursorView(0);
-	GotoXY(x, y);
+	GotoXY(x = 30, y = 20);
 	printf("○");
+
 	while (1)
 	{
 		if (_kbhit())
 		{
 			int nkey = _getch();
-			if (nkey == ARROW) 
+			if (nkey == ARROW)
 			{
 				nkey = _getch();
-				switch (nkey) 
+				switch (nkey)
 				{
 				case UP:
-					system("cls");
-					GotoXY(x, --y);
-					printf("○");
+					if (map[y - 1][x] == 0)
+					{
+						GotoXY(x, y);
+						if (map[y - 1][x] == 0) printf("  ");
+						GotoXY(x, y - 1);
+						y -= 1;
+						printf("○");
+					}
 					break;
 				case LEFT:
-					system("cls");
-					GotoXY(x = x - 2, y);
-					printf("○");
+					if (map[y][x / 2 + 1] == 0)
+					{
+						GotoXY(x, y);
+						if (map[y][x / 2] == 0) printf("  ");
+						GotoXY(x - 2, y);
+						x -= 2;
+						printf("○");
+					}
 					break;
 				case RIGHT:
-					system("cls");
-					GotoXY(x = x + 2, y);
-					printf("○");
+					if (map[y][x / 2 + 1] == 0)
+					{
+						GotoXY(x, y);
+						if (map[y][x / 2] == 0) printf("  ");
+						GotoXY(x + 2, y);
+						x += 2;
+						printf("○");
+					}
 					break;
 				case DOWN:
-					system("cls");
-					GotoXY(x, ++y);
-					printf("○");
+					if (map[y + 1][x] == 0)
+					{
+						GotoXY(x, y);
+						if (map[y + 1][x] == 0) printf("  ");
+						GotoXY(x, y + 1);
+						y += 1;
+						printf("○");
+					}
 					break;
 				}
 			}
