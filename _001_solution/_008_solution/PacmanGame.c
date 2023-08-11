@@ -5,15 +5,16 @@
 /// num의 수만큼 맵을 그리고 키입력이 있을 때마다 맵을 업데이트해준다.
 /// \param _num
 
-void MakeEmptyGridArr(int _num, int** _Grid_ver) {
-    int** Grid = (int**)calloc(_num, sizeof(int*));
-    for (int i = 0; i < _num; ++i) {
-        Grid[i] = (int*)calloc(_num, sizeof(int));
-    }
-    _Grid_ver = Grid;
+void MakeEmptyGridArr(int _num, int*** _Grid_ver) {
+    int** Grid_temp = (int**)calloc(_num, sizeof(int*));
+
+    for (int i = 0; i < _num; ++i) 
+        Grid_temp[i] = (int*)calloc(_num, sizeof(int) * _num);
+
+    *_Grid_ver = Grid_temp;
 }
 
-void DrawWalls(int _num, int** _Grid_ver) {
+void DrawWalls(int _num, int*** _Grid_ver) {
     // outer wall
     for (int i = 0; i < _num; ++i) {
         _Grid_ver[i][0] = 1;
@@ -42,8 +43,11 @@ void main() {
         }
     }
 
+    for (int i = 0; i < gridNum; i++)
+    {
+	    free(Grid_ver[i]);
+    }
     free(Grid_ver);
-    free(*Grid_ver);
 }
 
 /*
