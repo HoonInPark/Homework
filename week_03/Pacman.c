@@ -175,11 +175,20 @@ int movement()
 			}
 			else
 			{
-				gotoxy(x, y);
-				printf(" ");	
-				map[x][y] = 3;
-				score++;
-
+				if (map[x][y] == 1)
+				{
+					gotoxy(x, y);
+					printf(" ");
+					map[x][y] = 3;
+					score++;
+				}
+				else
+				{
+					gotoxy(x, y);
+					printf(" ");
+					map[x][y] = 3;
+				}
+				
 				gotoxy(x_new, y_new);
 				printf("O");
 
@@ -205,10 +214,19 @@ int movement()
 			}
 			else
 			{
-				gotoxy(x, y);
-				printf(" ");
-				map[x][y] = 3;
-				score++;
+				if (map[x][y] == 1)
+				{
+					gotoxy(x, y);
+					printf(" ");
+					map[x][y] = 3;
+					score++;
+				}
+				else
+				{
+					gotoxy(x, y);
+					printf(" ");
+					map[x][y] = 3;
+				}
 
 				gotoxy(x_new, y_new);
 				printf("O");
@@ -235,10 +253,19 @@ int movement()
 			}
 			else
 			{
-				gotoxy(x, y);
-				printf(" ");
-				map[x][y] = 3;
-				score++;
+				if (map[x][y] == 1)
+				{
+					gotoxy(x, y);
+					printf(" ");
+					map[x][y] = 3;
+					score++;
+				}
+				else
+				{
+					gotoxy(x, y);
+					printf(" ");
+					map[x][y] = 3;
+				}
 
 				gotoxy(x_new, y_new);
 				printf("O");
@@ -265,10 +292,19 @@ int movement()
 			}
 			else
 			{
-				gotoxy(x, y);
-				printf(" ");
-				map[x][y] = 3;
-				score++;
+				if (map[x][y] == 1)
+				{
+					gotoxy(x, y);
+					printf(" ");
+					map[x][y] = 3;
+					score++;
+				}
+				else
+				{
+					gotoxy(x, y);
+					printf(" ");
+					map[x][y] = 3;
+				}
 
 				gotoxy(x_new, y_new);
 				printf("O");
