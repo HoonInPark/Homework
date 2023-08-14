@@ -67,21 +67,18 @@ int movement();
 int gameOver();
 int random_Axis();
 int random_Add();
-
-void move_monstor_01();
-void move_monstor_02();
-void move_monstor_03();
-void move_monstor_04();
+void move_monster(int* monster);
 
 DWORD WINAPI ThreadFunc1(void* data)
 {	
 	while (_bThreadStart) {
 		Sleep(500);
 		
-		move_monstor_01();
-		move_monstor_02();
-		move_monstor_03();
-		move_monstor_04();
+		move_monster(monster_01);
+		move_monster(monster_02);
+		move_monster(monster_03);
+		move_monster(monster_04);
+
 		movement();
 	}
 	return 0;
@@ -305,7 +302,7 @@ int gameOver()
 	}	
 
 	gotoxy(10, 15);
-	printf("-GAME OVER-\n");
+	printf("-GAME OVER-\n%d", score);
 
 	return 0;
 }
@@ -337,15 +334,16 @@ int random_Add()
 	return nAdd;
 }
 
-void move_monstor_01()
+void move_monster(int* monster)
 {
-	int x_old = monster_01[0];
-	int y_old = monster_01[1];
-	int nSymbol = monster_01[2];
+	int x_old = monster[0];
+	int y_old = monster[1];
 	int x_new = 0;
 	int y_new = 0;
 	int nAxis = random_Axis();
 	int nAdd = random_Add();
+	int nSymbol = monster[2];
+
 
 	if (nAxis == 1) // y축
 	{
@@ -375,177 +373,12 @@ void move_monstor_01()
 				map[x_old][y_old] = 3;
 			}
 
-
+			monster[2] = map[x_new][y_new];
 			gotoxy(x_new, y_new);
 			printf("M");
 
-			monster_01[0] = x_new;
-			monster_01[1] = y_new;
-			map[x_new][y_new] = 4;
-		}		
-		else
-		{
-			_bWhile = false;
-		}
-	}
-	else
-	{
-		nAxis = random_Axis();
-		nAdd = random_Add();
-	}
-}
-void move_monstor_02()
-{
-	int x_old = monster_02[0];
-	int y_old = monster_02[1];
-	int nSymbol = monster_02[2];
-	int x_new = 0;
-	int y_new = 0;
-	int nAxis = random_Axis();
-	int nAdd = random_Add();
-
-	if (nAxis == 1) // y축
-	{
-		y_new = y_old + nAdd;
-		x_new = x_old;
-	}
-	else if (nAxis == 0)// x축
-	{
-		x_new = x_old + nAdd;
-		y_new = y_old;
-	}
-
-	if (map[x_new][y_new] != 0)
-	{
-		if (map[x_new][y_new] != 2)
-		{
-			if (nSymbol == 1)
-			{
-				gotoxy(x_old, y_old);
-				printf("*");
-			}
-			else if (nSymbol == 3)
-			{
-				gotoxy(x_old, y_old);
-				printf(" ");
-			}
-
-
-			gotoxy(x_new, y_new);
-			printf("M");
-
-			monster_02[0] = x_new;
-			monster_02[1] = y_new;
-			map[x_new][y_new] = 4;
-		}
-		else
-		{
-			_bWhile = false;
-		}
-	}
-	else
-	{
-		nAxis = random_Axis();
-		nAdd = random_Add();
-	}
-}
-void move_monstor_03()
-{
-	int x_old = monster_03[0];
-	int y_old = monster_03[1];
-	int nSymbol = monster_03[2];
-	int x_new = 0;
-	int y_new = 0;
-	int nAxis = random_Axis();
-	int nAdd = random_Add();
-
-	if (nAxis == 1) // y축
-	{
-		y_new = y_old + nAdd;
-		x_new = x_old;
-	}
-	else if (nAxis == 0)// x축
-	{
-		x_new = x_old + nAdd;
-		y_new = y_old;
-	}
-
-	if (map[x_new][y_new] != 0)
-	{
-		if (map[x_new][y_new] != 2)
-		{
-			if (nSymbol == 1)
-			{
-				gotoxy(x_old, y_old);
-				printf("*");
-			}
-			else if (nSymbol == 3)
-			{
-				gotoxy(x_old, y_old);
-				printf(" ");
-			}
-
-
-			gotoxy(x_new, y_new);
-			printf("M");
-
-			monster_03[0] = x_new;
-			monster_03[1] = y_new;
-			map[x_new][y_new] = 4;
-		}
-		else
-		{
-			_bWhile = false;
-		}
-	}
-	else
-	{
-		nAxis = random_Axis();
-		nAdd = random_Add();
-	}
-}
-void move_monstor_04()
-{
-	int x_old = monster_04[0];
-	int y_old = monster_04[1];
-	int nSymbol = monster_04[2];
-	int x_new = 0;
-	int y_new = 0;
-	int nAxis = random_Axis();
-	int nAdd = random_Add();
-
-	if (nAxis == 1) // y축
-	{
-		y_new = y_old + nAdd;
-		x_new = x_old;
-	}
-	else if (nAxis == 0)// x축
-	{
-		x_new = x_old + nAdd;
-		y_new = y_old;
-	}
-
-	if (map[x_new][y_new] != 0)
-	{
-		if (map[x_new][y_new] != 2)
-		{
-			if (nSymbol == 1)
-			{
-				gotoxy(x_old, y_old);
-				printf("*");
-			}
-			else if (nSymbol == 3)
-			{
-				gotoxy(x_old, y_old);
-				printf(" ");
-			}
-
-
-			gotoxy(x_new, y_new);
-			printf("M");
-
-			monster_04[0] = x_new;
-			monster_04[1] = y_new;
+			monster[0] = x_new;
+			monster[1] = y_new;
 			map[x_new][y_new] = 4;
 		}
 		else
