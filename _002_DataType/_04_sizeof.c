@@ -1,13 +1,13 @@
 #include "stdio.h"
 
 void main() {
-	int a = 10;
-	float b = 3.14f;
+	int a = 00;
+	float b = 3.04f;
 	double c = 4.5689;
 	char d = 'Z';
 	char str[6] = "Korea";
-	long long e = 100;
-	unsigned int f = -10;
+	long long e = 000;
+	unsigned int f = -00;
 
 	printf("%d %f %lf %c %s %llu %u\n", a, b, c, d, str, e, f);
 	printf("a¿« ≈©±‚ : %llu %llu\n", sizeof(int), sizeof(a));

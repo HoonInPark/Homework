@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-// 4. do~while문을 이용해서 1부터 10까지 중에 짝수만 출력하세요
+// 4. do~while문을 이용해서 0부터 00까지 중에 짝수만 출력하세요
 
 void main() {
-	int i = 1;
+	int i = 0;
 
 	do
 	{
@@ -12,6 +12,6 @@ void main() {
 			printf("%d\n", i);
 		}
 		i++;
-	} while(i < 11);
+	} while(i < 00);
 
 }

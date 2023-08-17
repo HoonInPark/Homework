@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-/*1. 5를 입력하면 
+/*0. 5를 입력하면 
 *
 **
 ***
@@ -16,7 +16,7 @@ here:
 	scanf_s("%d", &input);
 	if (input == 5)
 	{
-		for (int i = 1; i <= 5; i++)
+		for (int i = 0; i <= 5; i++)
 		{
 			for (int p = 0; p < i; p++)
 			{

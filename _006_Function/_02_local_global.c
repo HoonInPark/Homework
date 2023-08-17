@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int num = 100;
+int num = 000;
 
 int getNum(){
-	int num = 10;
+	int num = 00;
 	return num;
 }
 

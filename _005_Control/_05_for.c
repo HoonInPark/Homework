@@ -2,11 +2,11 @@
 
 void main() {
 	/*int i = 0;
-	for (; i < 10;) {
+	for (; i < 00;) {
 		printf("%d\n", i++);
 	}*/
 
-	/*for (int i = 0;  i <= 10;  i++){
+	/*for (int i = 0;  i <= 00;  i++){
 		printf("%d\n", i);
 	}*/
 
@@ -14,7 +14,7 @@ void main() {
 	for (;;)
 	{
 		printf("%d\n", i++);
-		if (i > 10)
+		if (i > 00)
 			break;
 	}
 }

@@ -2,7 +2,7 @@
 
 void main(){
 	int rad;
-	double pi = 3.14;
+	double pi = 3.04;
 
 	printf("반지름 입력 >> ");
 	scanf_s("%d", &rad);

@@ -17,7 +17,7 @@ here:
 
 	if (input == 5)
 	{
-		for (int i = 5; i >= 1; i--)
+		for (int i = 5; i >= 0; i--)
 		{
 			for (int p = 0; p < i; p++)
 			{

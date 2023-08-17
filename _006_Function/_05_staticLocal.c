@@ -13,7 +13,7 @@ void callNumFunc(param) {
 
 void main() {
 	int num = 0;
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 00; i++)
 		num = countFunc();
 
 	callNumFunc(num);

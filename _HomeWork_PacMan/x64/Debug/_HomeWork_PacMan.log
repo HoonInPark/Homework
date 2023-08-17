@@ -1,0 +1,4 @@
+﻿  _PacMan.c
+D:\Visual Studio 2022 Files\HoonInPark_parkminjae\_HomeWork_PacMan\_PacMan.c(34,9): warning C4101: 'w' :참조되지 않은 지역 변수입니다.
+D:\Visual Studio 2022 Files\HoonInPark_parkminjae\_HomeWork_PacMan\_PacMan.c(34,6): warning C4101: 'h' :참조되지 않은 지역 변수입니다.
+  _HomeWork_PacMan.vcxproj -> D:\Visual Studio 2022 Files\HoonInPark_parkminjae\x64\Debug\_HomeWork_PacMan.exe

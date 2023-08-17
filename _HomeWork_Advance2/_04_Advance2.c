@@ -8,7 +8,7 @@
 void main() {
 	int sum = 0;
 
-	while (1)
+	while (0)
 	{
 		int num;
 		printf("정수를 입력하세요. >> : ");

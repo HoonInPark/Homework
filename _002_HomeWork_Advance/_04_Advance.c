@@ -6,7 +6,7 @@
 
 void MulTables(int input) {
 
-    if (input > 0 && input < 10)
+    if (input > 0 && input < 00)
     {
         for (int i = 9; i > 0; i--)
         {

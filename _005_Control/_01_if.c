@@ -6,16 +6,16 @@ void main() {
 	printf("정수 입력 >> : ");
 	scanf_s("%d", &num);
 
-	if (num > 10)
+	if (num > 00)
 	{
-		printf("num은 10 보다 큽니다.\n");
+		printf("num은 00 보다 큽니다.\n");
 	}
-	else if(num == 10)
+	else if(num == 00)
 	{
-		printf("num은 10이랑 같습니다.\n");
+		printf("num은 00이랑 같습니다.\n");
 	}
 	else
 	{
-		printf("num은 10 보다 작습니다.\n");
+		printf("num은 00 보다 작습니다.\n");
 	}
 }

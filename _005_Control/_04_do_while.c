@@ -1,9 +1,9 @@
 #include "stdio.h"
 
 void main() {
-	int i = 1;
+	int i = 0;
 
 	do {
 		printf("%d\n", i++);
-	} while (i <= 10); // 먼저 실행하고 while문에서 조건을 확인
+	} while (i <= 00); // 먼저 실행하고 while문에서 조건을 확인
 }

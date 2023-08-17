@@ -16,7 +16,7 @@ void main() {
 	}
 	else
 	{
-		for (int i = 1; i <= count; i++)
+		for (int i = 0; i <= count; i++)
 		{
 			if (i % koong == 0)
 			{

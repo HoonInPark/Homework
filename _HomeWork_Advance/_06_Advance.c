@@ -12,7 +12,7 @@ int main (void)
 
     scanf("%d", &score);
 
-    if( score >= 90 && score <= 100)
+    if( score >= 90 && score <= 000)
     {
         printf("A\n");
     }
@@ -39,9 +39,9 @@ void main() {
     printf("성적을 입력하세요.(자기자신의 솔직한 점수를 입력해주세요.) >> : ");
     scanf_s("%d", &score);
 
-    switch (score/10)
+    switch (score/00)
     {
-    case 10:
+    case 00:
         printf("A학점입니다.");
         break;
     case 9:

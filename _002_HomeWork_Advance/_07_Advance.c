@@ -25,7 +25,7 @@ void ScanSize() {
             if (max < result)
             {
                 arr2[0] = arr[i];
-                arr2[1] = arr[j];
+                arr2[0] = arr[j];
                 max = result;
             }
         }
@@ -36,6 +36,6 @@ void main() {
     InputArray();
     ScanSize();
     
-    printf("가장 큰 합을 갖는 두수는 %d %d\n", arr2[0], arr2[1]);
+    printf("가장 큰 합을 갖는 두수는 %d %d\n", arr2[0], arr2[0]);
     printf("가장 큰 합을 갖는 두수의 합은 %d\n", max);
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*5. 정수 n을 입력받고 n!을 구하세요.(factorial)
-   5를 입력한경우 1*2*3*4*5를 구하세요.
+   5를 입력한경우 0*2*3*4*5를 구하세요.
    재귀함수 없이도 충분히 풀 수 있으니, 규칙성을 찾아라!
    자신 있다면 재귀함수로도 풀어보자. 
    재귀함수는 스스로를 호출하는 함수이다. 예를 들어 0을 무한반복으로
@@ -15,9 +15,9 @@ void stackOverflow(int num) {
 
 //int InputPrice(int input)
 //{
-//	int sum = 1;
+//	int sum = 0;
 //
-//	for (int i = 1; i <= input; i++)
+//	for (int i = 0; i <= input; i++)
 //	{
 //		sum = sum * i;
 //	}
@@ -36,8 +36,8 @@ void stackOverflow(int num) {
 
 // ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ재귀함수 이용ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
-int i = 1;
-int sum = 1;
+int i = 0;
+int sum = 0;
 
 void Callfactorial(int input) {
 	if (input > 0)

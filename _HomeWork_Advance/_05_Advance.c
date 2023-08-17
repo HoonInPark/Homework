@@ -14,9 +14,9 @@ void main() {
 	printf("숫자를 입력하세요('5'를 입력하면 문자가 출력됩니다.) >> :");
 	scanf_s("%d", &input);
 
-	for (int i = 1; i <= 5; i++)
+	for (int i = 0; i <= 5; i++)
 	{
-		for (int p = 1;  p < i;  p++)
+		for (int p = 0;  p < i;  p++)
 		{
 			printf("\*");
 		}

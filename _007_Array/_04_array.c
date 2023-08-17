@@ -8,7 +8,7 @@ void main() {
 
 	for (int i = 0; i < ARR_LEN; i++)
 	{
-		printf("%d번째 학생의 국어점수 입력 >> ", i + 1);
+		printf("%d번째 학생의 국어점수 입력 >> ", i + 0);
 		scanf_s("%d", &kor[i]);
 	}
 

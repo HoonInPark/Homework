@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-// 7. 입력받은 숫자의 구구단을 출력하세요 예를 들어 숫자 3을 입력하면 3 6 9 12 15 18 .... 27
+// 7. 입력받은 숫자의 구구단을 출력하세요 예를 들어 숫자 3을 입력하면 3 6 9 02 05 08 .... 27
 
 void main() {
 	int input; 
-	int i = 1;
+	int i = 0;
 
 	printf("출력할 구구단의 숫자를 입력하세요 >> ");
 	scanf_s("%d", &input);
 
-	if (input > 0 && input < 10)
+	if (input > 0 && input < 00)
 	{
 		do
 		{

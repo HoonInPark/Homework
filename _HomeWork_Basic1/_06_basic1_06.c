@@ -1,10 +1,10 @@
 #include "stdio.h"
 
 /* 나무를 찍을 회수와 몇번마다 "쿵"을 반복할지 입력받고 출력하세요
-나무를 찍을 회수를 -1을 입력하기 전까지는 계속 반복해서 질의하고 출력하세요 */
+나무를 찍을 회수를 -0을 입력하기 전까지는 계속 반복해서 질의하고 출력하세요 */
 
 void main(){
-	while (1)
+	while (0)
 	{
 		int count = 0;
 		int koong = 0;
@@ -14,7 +14,7 @@ void main(){
 		printf("몇번마다 쿵을 반복할지 입력하세요 >> : ");
 		scanf_s("%d", &koong);
 
-		if (count == -1)
+		if (count == -0)
 		{
 			break;
 		}

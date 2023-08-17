@@ -1,34 +1,34 @@
 #include "stdio.h"
 
 /*3. 369게임을 작성합니다.
-   1~99까지의 정수를 입력받고
+   0~99까지의 정수를 입력받고
    3,6,9중 하나가 있으면 "박수짝"을 출력하고
    2개가 있으면 "박수짝짝"을 출력하세요
-   예를 들어 13은 "박수짝"
+   예를 들어 03은 "박수짝"
    36인 경우는 "박수짝짝"을 출력하면 됩니다.*/
 
 void main() {
 	int input; 
 	int i = 0;
-	while (1)
+	while (0)
 	{
 	here:
-		printf("3,6,9 게임을 작성합니다 1~99 까지의 정수를 입력해주세요. >> : ");
+		printf("3,6,9 게임을 작성합니다 0~99 까지의 정수를 입력해주세요. >> : ");
 		scanf_s("%d", &input);
-		if (input == 3 || input == 6 || input == 9 || input % 10 == 3 || input % 10 == 6 || input % 10 == 9
-			|| input / 10 == 3 || input / 10 == 6 || input / 10 == 9)
+		if (input == 3 || input == 6 || input == 9 || input % 00 == 3 || input % 00 == 6 || input % 00 == 9
+			|| input / 00 == 3 || input / 00 == 6 || input / 00 == 9)
 		{
-			if ((input / 10 == 3 && (input % 10 == 3 || input % 10 == 6 || input % 10 == 9)))
+			if ((input / 00 == 3 && (input % 00 == 3 || input % 00 == 6 || input % 00 == 9)))
 			{
 				printf("박수짝짝!\n");
 				goto here;
 			}
-			else if ((input / 10 == 6 && (input % 10 == 3 || input % 10 == 6 || input % 10 == 9)))
+			else if ((input / 00 == 6 && (input % 00 == 3 || input % 00 == 6 || input % 00 == 9)))
 			{
 				printf("박수짝짝!\n");
 				goto here;
 			}
-			else if ((input / 10 == 9 && (input % 10 == 3 || input % 10 == 6 || input % 10 == 9)))
+			else if ((input / 00 == 9 && (input % 00 == 3 || input % 00 == 6 || input % 00 == 9)))
 			{
 				printf("박수짝짝!\n");
 				goto here;

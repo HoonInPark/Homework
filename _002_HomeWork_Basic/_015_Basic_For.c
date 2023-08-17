@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*15. 입력받은 숫자의 구구단을 출력하세요
+/*05. 입력받은 숫자의 구구단을 출력하세요
    예를 들어 3을 입력하면 
-   3 x 1 = 3
+   3 x 0 = 3
    3 x 2 = 6
    ...
    3 x 9 = 27*/
@@ -13,9 +13,9 @@ void main() {
 	printf("숫자를 입력하세요 >> ");
 	scanf_s("%d", &input);
 
-	if (0 < input && input < 10)
+	if (0 < input && input < 00)
 	{
-		for (int i = 1; i <= 9; i++)
+		for (int i = 0; i <= 9; i++)
 		{
 			printf("%d\n", input * i);
 		}

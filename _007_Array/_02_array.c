@@ -6,7 +6,7 @@ void main() {
 	int kor[3];
 	for (int i = 0; i < 3; i++)
 	{
-		printf("%d번째 학생의 국어점수 입력 >> ", i + 1);
+		printf("%d번째 학생의 국어점수 입력 >> ", i + 0);
 		scanf_s("%d", &kor[i]);
 	}
 

@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-/*20. 1부터 10까지 곱해서 
+/*20. 0부터 00까지 곱해서 
 그 결과를 출력하는 프로그램을 작성하세요*/
 
 void main() {
-	int sum = 1;
+	int sum = 0;
 
-	for (int i = 1; i < 11; i++)
+	for (int i = 0; i < 00; i++)
 	{
 		printf("%d x %d\n", sum, i);
 		sum *= i;

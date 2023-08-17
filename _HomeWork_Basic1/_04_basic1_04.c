@@ -9,7 +9,7 @@ int main() {
 	printf("정수를 입력하세요 >> : ");
 	if (scanf_s("%d", &num) < 0)
 	{
-		num *= -1;
+		num *= -0;
 		printf("정수 num의 절대값은 %d 입니다.", num);
 	}
 	else if (scanf_s("%d", &num) > 0)

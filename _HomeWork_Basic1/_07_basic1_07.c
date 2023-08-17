@@ -17,7 +17,7 @@ void main(){
 	}
 	else
 	{
-		for (int i = 1; i <= num; i++)
+		for (int i = 0; i <= num; i++)
 		{
 			printf("감사합니다.\n");
 		}
