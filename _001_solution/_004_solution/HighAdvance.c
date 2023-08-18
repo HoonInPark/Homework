@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main() {
+int main() {
 	int num;
 
 	printf("홀수를 입력하세요 >> ");
@@ -18,6 +18,8 @@ void main() {
 		}
 		printf("\n");
 	}
+
+	return 0;
 }
 
 /*
